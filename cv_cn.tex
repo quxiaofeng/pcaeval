@@ -1,0 +1,486 @@
+%!TEX program=xelatex
+% \title{QUXIAOFENG-CV-CN}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com) 
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+\usepackage{xeCJK}
+\setCJKmainfont[
+  BoldFont={WenQuanYi Micro Hei},
+  ItalicFont={AR PL UKai CN}]
+{AR PL UMing CN}
+\setCJKsansfont{WenQuanYi Micro Hei}
+\usepackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\usepackage{bibentry}
+\nobibliography*
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{曲晓峰}{}{ \urlstyle{same}
+\href{mailto:quxiaofeng@ieee.org}{quxiaofeng@ieee.org} | +86 181 1879 1848}
+
+% \href{http://github.com/quxiaofeng}{github.com/quxiaofeng}
+
+% \begin{center}
+% \huge\color{subheadings}\custombold{软硬结合\textbullet{}敏捷实效\textbullet{}精简优雅}
+% \end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{工作经历}
+
+\runsubsection{清华大学深圳研究生院}
+\descript{| 博士后 }
+\location{2018 年 1 月 – 至今 | 深圳}
+\begin{tightemize}
+\item 研究方向：机器视觉、生物特征识别、图像采集与识别系统、视觉物体检测与测量、自动光学缺陷检测
+\item 绿米联创合作项目（2017 年 9 月 – 2019 年 10 月，小米生态链企业，主营低功耗 Zigbee 物联网智能家居智能硬件）
+\begin{itemize}
+\item Zigbee 网关 LED 生产质量在线检测项目：使用 USB Dongle 通过 Zigbee 发送 LED 调试指令，检测 LED 是否正常工作。
+\item 智能门锁安装项目：以小程序为入口，利用深度学习（物体检测与实例分割），在手机拍摄并上传的门锁图像中，识别门锁类型，检测门锁导向片的组件，并测量导向片的尺寸，生成相关数据供上门安装人员预先准备安装辅助工具。该项目将上门安装时间从14天缩短到4天，支撑了七种、三万把以上的智能门锁的上门安装。
+\item 智能门锁算法优化项目：通过纹理分析，检测指纹传感器上的非指纹异物；分析三维人脸传感器采集到的点云数据质量，分析三维人脸识别算法的可靠性。
+\item 新型智能家居产品调研；智能家居、智能硬件产品相关知识产权布局。
+\end{itemize}
+\item 门把手识别：纹理特征分析；进一步小型化的笔式识别系统原型。
+\item 可撤销的手上生物特征识别系统原型开发及专利申请。
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Lumi United Service}
+% \descript{| 算法工程师 }
+% \location{2017 年 9 月 – 至今 | 香港}
+% %\vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+% \item 嵌入式产品算法、深度学习应用、图像与视频算法
+% \end{tightemize}
+% \sectionsep
+
+\runsubsection{机器视觉创业项目}
+\descript{| }
+\location{2017 年 5 月 – 2017 年 9 月 | 深圳}
+\begin{tightemize}
+\item 机器视觉项目开发：客户对接、需求分析、项目规划、系统搭建、进场测试、项目移交。
+\item 建立机器视觉团队：人员规划、招聘面试、入职培训、团队建设。
+\item 电子纸14项表面缺陷检测项目、比亚迪塑料手机壳表面缺陷检测项目、比亚迪3D玻璃手机壳表面质量和三维检测项目。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{绿米联创}
+\descript{| 首席算法工程师（实习） }
+\location{2016 年 9 月 – 2017 年 4 月 | 深圳}
+\begin{tightemize}
+\item 带有 Zigbee 网关功能的 WIFI 大视角摄像头项目：设计成像质量检测方法，并与供应商协调优化视频参数提高成像质量；通过声音通讯传递联网信息，进行快速联网设置。
+\item 嵌入式产品识别算法开发；数据分析/深度学习内部培训；推动并组建内部数据分析团队与流程。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{香港理工大学纺织及制衣学系}
+\descript{| 助理研究员（兼职） }
+\location{2013 年 6 月 – 2014 年 2 月 | 香港}
+\begin{tightemize}
+\item 利用 Python 和 OpenGL 开发交互式 3D 人体模型
+\end{tightemize}
+\sectionsep
+
+\runsubsection{\href{http://www.comp.polyu.edu.hk/}{香港理工大学电子计算学系}}
+\descript{| 助教（兼职） }
+\location{2010 年秋季学期 - 2012 年秋季学期 | 香港}
+\begin{tightemize}
+\item COMP407 Computer Graphics，计算机图形学；COMP102 Enterprise Information Technology，企业信息技术；COMP210 Discrete Structures， 离散数据结构；COMP435p Biometrics Authentication， 人体生物特征认证；ENG2003 Information Technology， 信息技术。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{国际图形图像杂志 (International Journal of Image and Graphics)}
+\descript{| 主编助理（兼职） }
+\location{2010 年 9 月 - 2012 年 3 月 | 香港}
+\begin{tightemize}
+\item 管理组织五期学术杂志的收稿、审稿与发表相关工作。
+\end{tightemize}
+\sectionsep
+
+\runsubsection{人体生物特征识别研究中心}
+\descript{| 助理研究员 }
+\location{2008 年 4 月 - 2010 年 3 月 | 香港理工大学电子计算学系}
+\begin{tightemize}
+\item 基于 51 单片机/Cypress USB/三星 ARM/德州仪器 DSP/Altera FPGA 开发了一系列生物特征识别系统。
+\end{tightemize}
+\sectionsep
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{教育背景}
+
+\runsubsection{\href{www.polyu.edu.hk}{香港理工大学}}
+\descript{| 2017 年 3 月}
+\location{哲学博士 | 计算机专业 | 中国 \textbullet{} 香港}
+
+\href{www.polyu.edu.hk}{香港理工大学} \textbullet{} \href{http://www.comp.polyu.edu.hk/}{电子计算学系} \textbullet{} \href{http://www.comp.polyu.edu.hk/~biometrics/}{人体生物特征识别中心}
+\sectionsep
+
+\runsubsection{\href{http://www.sut.edu.cn/}{沈阳工业大学}}
+\descript{| 2008 年 3 月}
+\location{工学硕士 | 检测技术及自动化装置专业 | 视觉检测技术研究所 | 中国\textbullet{}沈阳}
+
+第十届全国大学生课外学术科技作品竞赛挑战杯三等奖 \textbullet{} 优秀毕业论文 \textbullet{} 优秀毕业生 
+\sectionsep
+
+\runsubsection{\href{http://www.sut.edu.cn/}{沈阳工业大学}}
+\descript{| 2005 年 7 月}
+\location{工学学士 | 电子信息工程专业 | 辅修工商管理专业合格 | 中国\textbullet{}沈阳}
+
+三好学生 \textbullet{} 优秀团员 \textbullet{} 连续三年奖学金\footnote{毕业学年无奖学金评定} \textbullet{} 优秀毕业设计 \textbullet{} 优秀毕业生
+
+
+% 填空
+\vfill
+
+% 翻页
+\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LANGUAGES AND SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{语言}
+\begin{minipage}[t]{.6\textwidth}
+\subsection{程序语言}
+\location{有开发经验}
+Python \textbullet{}
+C \textbullet{}
+C++ \textbullet{}
+MATLAB \textbullet{}
+{\color{red} $\varheartsuit$} Julia \textbullet{}
+\LaTeX \\
+\location{熟悉}
+Ruby \textbullet{}
+Javascript \textbullet{}
+HTML \textbullet{}
+CSS \textbullet{}
+Bash \textbullet{}
+Android \textbullet{}
+MySQL
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.35\textwidth}
+\subsection{自然语言}
+\location{专业协作} 汉语，英语\\
+\location{文献阅读} 法语、俄语、德语\\
+\end{minipage}
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ASSOCIATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{专业协会}
+
+\runsubsection{IEEE 香港分会 / 中国计算机协会 CCF / 香港互联网协会 ISOCHK}
+\descript{| 会员}
+\sectionsep
+\runsubsection{雷锋网}
+\descript{| 专栏作者}
+
+\sectionsep
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %     PUBLICATION
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand\refname{论文} %changes default name to Publications
+\nocite{*} %lists everything in the .bib file
+\bibliographystyle{apalike} %hundreds of styles to choose from
+\bibliography{pub} %name of your .bib file
+
+\sectionsep
+
+%\begin{tightemize}
+%\item \bibentry{Qu2015lps}
+%\item \bibentry{Xie2012}
+%\item \bibentry{Qu2008pca}
+%\end{tightemize}
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PATENTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{发明专利}
+
+
+\runsubsection{门锁安装辅助方法及装置}
+\descript{| 中国专利 ZL201810044199 }
+\location{2020 年二月十八日授权}
+\sectionsep
+
+\runsubsection{ 图像识别方法、装置、系统、电子设备及存储介质 }
+\descript{| 中国专利 ZL201910855388 }
+\location{2019 年十二月十三日公开}
+\sectionsep
+
+\runsubsection{ 指纹识别方法、装置、智能门锁及可读存储介质 }
+\descript{| 中国专利 ZL201910663347 }
+\location{2019 年十一月二十九日公开}
+\sectionsep
+
+\runsubsection{ 磁悬浮灯及其控制方法 }
+\descript{| 中国专利 ZL201910527245 }
+\location{2019 年十一月五日公开}
+\sectionsep
+
+\runsubsection{ 电磁悬浮开合的磁吸附式吊灯 }
+\descript{| 中国专利 ZL201910452716 }
+\location{2019 年十月二十二日公开}
+\sectionsep
+
+\runsubsection{握姿人手图像识别系统及其识别方法}
+\descript{| 中国专利 CN201410137490 }
+\location{2019 年十月十五日授权}
+\sectionsep
+
+\runsubsection{ 导向片参数获取方法、装置、电子设备以及存储介质 }
+\descript{| 中国专利 ZL201910324817 }
+\location{2019 年九月六日公开}
+\sectionsep
+
+\runsubsection{ 生物特征模型生成方法、装置、服务器及存储介质 }
+\descript{| 中国专利 ZL201910309876 }
+\location{2019 年八月二十七日公开}
+\sectionsep
+
+\runsubsection{ 设备控制方法、装置、摄像机以及存储介质 }
+\descript{| 中国专利 ZL201910228907 }
+\location{2019 年八月九日公开}
+\sectionsep
+
+\runsubsection{ 设备联动控制方法、装置、系统、网关及存储介质 }
+\descript{| 中国专利 ZL201910204894 }
+\location{2019 年七月三十日公开}
+\sectionsep
+
+\runsubsection{ 一种掌纹识别方法及系统 }
+\descript{| 中国专利 ZL201910229458 }
+\location{2019 年七月十二日公开}
+\sectionsep
+
+\runsubsection{ 一种微型人手识别设备及识别方法 }
+\descript{| 中国专利 ZL201910224288 }
+\location{2019 年七月十二日公开}
+\sectionsep
+
+\runsubsection{ 基于物体识别的信息推送方法、装置、电子设备及系统 }
+\descript{| 中国专利 ZL201910118124 }
+\location{2019 年七月二日公开}
+\sectionsep
+
+\runsubsection{ 数据处理方法、装置及系统 }
+\descript{| 中国专利 ZL201910065331 }
+\location{2019 年六月二十八日公开}
+\sectionsep
+
+\runsubsection{ 跌倒预测方法、装置、电子设备及系统 }
+\descript{| 中国专利 ZL201910100602 }
+\location{2019 年六月二十一日公开}
+\sectionsep
+
+\runsubsection{ 模型配置方法、装置、电子设备及可读取存储介质 }
+\descript{| 中国专利 ZL201910105813 }
+\location{2019 年六月十四日公开}
+\sectionsep
+
+\runsubsection{ 智能家居设备推荐方法、装置、物联网系统以及云服务器 }
+\descript{| 中国专利 ZL201910065330 }
+\location{2019 年六月七日公开}
+\sectionsep
+
+\runsubsection{ 视觉传感器及应用于视觉传感器的物体检测方法和装置 }
+\descript{| 中国专利 ZL201910024672 }
+\location{2019 年五月二十四日公开}
+\sectionsep
+
+\runsubsection{ 配网的方法、装置、智能家居系统、设备以及存储介质 }
+\descript{| 中国专利 ZL201811528413 }
+\location{2019 年五月十七日公开}
+\sectionsep
+
+\runsubsection{ 设备状态显示方法、装置、终端及存储介质 }
+\descript{| 中国专利 ZL201811500376 }
+\location{2019 年五月十七日公开}
+\sectionsep
+
+\runsubsection{ 设备控制方法、装置、系统及存储介质 }
+\descript{| 中国专利 ZL201811528405 }
+\location{2019 年四月五日公开}
+\sectionsep
+
+\runsubsection{ 一种隐藏式屏下光学模组及电子设备 }
+\descript{| 中国专利 ZL201811474036 }
+\location{2019 年四月五日公开}
+\sectionsep
+
+\runsubsection{ 目标识别方法、装置、视觉传感器及智能家居系统 }
+\descript{| 中国专利 ZL201811313873 }
+\location{2019 年三月二十九日公开}
+\sectionsep
+
+\runsubsection{ 智能家居设备控制方法、装置、系统及存储介质 }
+\descript{| 中国专利 ZL201811528407 }
+\location{2019 年三月十九日公开}
+\sectionsep
+
+\runsubsection{ 实现智能设备推荐的方法及装置 }
+\descript{| 中国专利 ZL201811075500 }
+\location{2019 年三月一日公开}
+\sectionsep
+
+\runsubsection{ 设备网络配置方法、装置及服务器 }
+\descript{| 中国专利 ZL201811475972 }
+\location{2019 年二月二十六日公开}
+\sectionsep
+
+\runsubsection{ 论文发表方法、装置以及服务器 }
+\descript{| 中国专利 ZL201811163103 }
+\location{2019 年二月二十二日公开}
+\sectionsep
+
+\runsubsection{ 在线竞赛方法、装置及服务器 }
+\descript{| 中国专利 ZL201811163099 }
+\location{2019 年二月十五日公开}
+\sectionsep
+
+\runsubsection{一种基于移动端非接触式指掌识别方法及系统}
+\descript{| 中国专利 ZL201810903071 }
+\location{2019 年一月四日公开}
+\sectionsep
+
+\runsubsection{手语控制方法、装置及系统}
+\descript{| 中国专利 ZL201810846966 }
+\location{2018 年十二月十八日公开}
+\sectionsep
+
+\runsubsection{门锁安装辅助方法及装置}
+\descript{| 中国专利 ZL201810043800 }
+\location{2018 年六月一日公开}
+\sectionsep
+
+\runsubsection{一种人体掌纹图像采集装置及处理方法}
+\descript{| 中国专利 ZL20110362063 }
+\location{2014 年二月二十一日授权}
+\sectionsep
+
+\runsubsection{圆筒内外壁加工精度在线成像检测装置及在线成像检测方法}
+\descript{| 中国专利 ZL200610155870 }
+\location{2009 年六月十日授权}
+\sectionsep
+
+
+% 填空
+\vfill
+
+% 翻页
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{项目与系统}
+
+\runsubsection{门把手人手识别系统}
+\descript{} %\descript{| 孙伟}
+\location{门把手外形的人体工学的人手生物特征识别系统 \\
+\urlstyle{same} \url{http://www.quxiaofeng.me/doorknob}}
+\sectionsep
+\runsubsection{线扫描掌纹识别系统}
+\descript{} %\descript{| 张栓伟、周剑}
+\location{基于 CIS 线扫描图像传感器的掌纹采集与识别系统 \\
+\urlstyle{same} \url{http://www.quxiaofeng.me/lps}}
+\sectionsep
+\runsubsection{手背纹理采集识别系统}
+\descript{} %\descript{| 谢晋 }
+\sectionsep
+\runsubsection{基于 USB 数字相机的高精度指纹采集系统}
+\descript{} %\descript{| 刘凤 }
+\sectionsep
+\runsubsection{使用 CY7C68013A USB 接口的多通道气味传感器}
+\descript{} %\descript{| 郭冬敏 }
+\sectionsep
+\runsubsection{使用 TI DSP、Altera FPGA 和 三星 ARM 的基于结构光的 3D 掌纹识别系统}
+\descript{} %\descript{| 骆南、黎伟 }
+\sectionsep
+\runsubsection{基于 TI DM642 DSP 的嵌入式掌纹识别系统}
+\descript{} %\descript{| 骆南、郭振华}
+\sectionsep
+
+\sectionsep
+
+\end{document}  \documentclass[]{article}
